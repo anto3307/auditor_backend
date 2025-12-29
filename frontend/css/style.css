@@ -1,0 +1,153 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* APP BACKGROUND */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+}
+
+/* MAIN APP CONTAINER */
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* HEADER SECTION */
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CARD (LOGIN BOX) */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* INPUT FIELDS */
+.card input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* MAIN BUTTON */
+.primary-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* LINKS */
+.link {
+    display: block;
+    text-align: center;
+    margin-top: 14px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-size: 14px;
+}
+.upload-label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+.file-input {
+    width: 100%;
+    margin-top: 6px;
+}
+.file-input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.file-input input[type="file"] {
+    padding: 6px;
+}
+.file-input input[type="file"]::-webkit-file-upload-button {
+    padding: 8px 12px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.file-input input[type="file"]::-moz-file-upload-button {
+    padding: 8px 12px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.file-input input[type="file"]:hover::-webkit-file-upload-button {
+    background: #16325c;
+}
+.file-input input[type="file"]:hover::-moz-file-upload-button {
+    background: #16325c;
+}
+.upload-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 14px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.upload-btn:hover {
+    background: #16325c;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px 15px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+}
+/* HOVER EFFECTS */
+.primary-btn:hover {
+    background: #16325c;
+}
+.link:hover {
+    text-decoration: underline;
+}
