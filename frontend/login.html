@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Auditor Login</title>
 
-    <!-- MOBILE SCREEN CONTROL -->
+    <!-- MOBILE VIEW -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,16 +20,22 @@
     </div>
 
     <div class="card">
-        <input type="email" placeholder="Email address">
-        <input type="password" placeholder="Password">
+        <input id="email" type="email" placeholder="Email address">
+        <input id="password" type="password" placeholder="Password">
 
-        <button class="primary-btn">Login</button>
+        <!-- IMPORTANT: type="button" -->
+        <button type="button" class="primary-btn" onclick="login()">
+            Login
+        </button>
 
         <a href="forgot_password.html" class="link">Forgot Password?</a>
         <a href="register.html" class="link">Create New Account</a>
     </div>
 
 </div>
+
+<!-- JS FILE (MUST BE AT BOTTOM) -->
+<script src="js/auth.js"></script>
 
 </body>
 </html>
